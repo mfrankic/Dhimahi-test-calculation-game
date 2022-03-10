@@ -1,0 +1,21 @@
+.question {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.cell {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.answer-check {
+  padding-left: 10px;
+
+  &.correct {
+    color: green;
+  }
+
+  &.wrong {
+    color: red;
+  }
+}

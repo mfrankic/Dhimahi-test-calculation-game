@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="question">{{ firstNumber }} + {{ secondNumber }} =</div>
+  <form
+    [formGroup]="form"
+    id="quizForm"
+    (ngSubmit)="saveAnswer(form)"
+    autocomplete="off"
+  >
+    <mat-form-field
+      class="form-field"
+      appearance="outline"
+      hideRequiredMarker="true"
+    >
+      <mat-label>Answer</mat-label>
+      <input type="number" matInput formControlName="result" />
+    </mat-form-field>
+  </form>
+</div>
+<table class="history">
+  <tr *ngFor="let entry of history">
+    <td class="cell">
+      {{ entry.firstNumber }}
+    </td>
+    <td class="cell">&plus;</td>
+    <td class="cell">
+      {{ entry.secondNumber }}
+    </td>
+    <td class="cell">&equals;</td>
+    <td class="cell">
+      {{ entry.answer }}
+    </td>
+    <td [class]="'answer-check ' + entry.correct.slice(0, -1)">
+      {{ entry.correct }}
+    </td>
+  </tr>
+</table>
