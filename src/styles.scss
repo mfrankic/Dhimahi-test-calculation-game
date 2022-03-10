@@ -1,0 +1,68 @@
+@import "../node_modules/@angular/material/theming";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.title {
+  font-size: 35px;
+  padding: 10px 20px !important;
+}
+
+.page-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: mat-color(mat-palette($mat-deep-purple));
+  margin: 20px;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.mat-form-field-wrapper {
+  padding: 0;
+  width: 70px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,11 @@
+<mat-toolbar class="navbar" color="primary">
+  <div>
+    <button class="title" mat-button routerLink="/">{{ title }}</button>
+  </div>
+</mat-toolbar>
+<div class="page">
+  <div class="page-title">Welcome to Calculation Game!</div>
+  <p>Input value below and see the result</p>
+  <app-question class="content"></app-question>
+</div>
+<router-outlet></router-outlet>
